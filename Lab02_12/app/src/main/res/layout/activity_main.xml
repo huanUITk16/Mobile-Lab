@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPositon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#6600FF"
+        app:layout_constraintTop_toBottomOf="@id/btn_nhap" />
+
+    <TextView
+        android:id="@+id/nhapTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap Ten"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Nhap" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPositon" />
+
+    <EditText
+        android:id="@+id/Nhap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_nhap"
+        app:layout_constraintLeft_toRightOf="@id/nhapTen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="NHAP"
+        app:layout_constraintEnd_toEndOf="@id/Nhap"
+        app:layout_constraintStart_toStartOf="@id/Nhap"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
